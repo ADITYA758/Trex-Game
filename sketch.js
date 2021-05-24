@@ -86,6 +86,8 @@ function draw() {
     score = score + Math.round(getFrameRate() / 60);
     ground.velocityX = -(6 + (3 * score) / 100);
 
+    showMobileControls(true, true, true, true);
+    
     if (
       (keyDown("space") && trex.y > 160) ||
       touches > 0 ||
